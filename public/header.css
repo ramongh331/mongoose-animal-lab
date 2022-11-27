@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  background-color: white;
+  width: 100vw;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.headerLogo {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  margin: 7px;
+}
+
+.rectangleLogo {
+  width: 20px;
+  height: 30px;
+  border: 4px solid rgb(227, 5, 42);
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.newAnimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 142px;
+  margin-left: auto;
+}
+
+.newAnimal:hover {
+  background-color: rgb(227, 5, 42);
+}
+
+.newAnimalText {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.newAnimal:hover .newAnimalText {
+  color: white;
+}

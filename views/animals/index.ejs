@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("../partials/head.ejs") %>
+  <head>
+    <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
   <body>
     <%- include("../partials/header.ejs") %>
     <main>
-      <div>
-        <a href="/animals/new"><button>Add a New Animal</button></a>
+      <h2>Animal App</h2>
+      <div class="animalList">
+        <div class="speciesHeader">
+          <div class="speciesBox"></div>
+          <h3>Species</h3>
+        </div>
         <% for (animal of animals){ %>
         <article>
-          <a href="/animals/<%=animal._id %>">
-            <h2>
+          <a class="animalLink" href="/animals/<%=animal._id %>">
+            <h4>
               <%= animal.species %> - <%=animal.extinct ? "Extinct" : "Alive" %>
-            </h2>
+            </h4>
           </a>
         </article>
         <% } %>

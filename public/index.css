@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 80%;
+}
+
+h2 {
+  color: white;
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.animalList {
+  align-self: self-start;
+}
+
+.animalLink {
+  text-decoration: none;
+}
+
+.speciesHeader {
+  display: flex;
+  align-items: center;
+}
+
+.speciesBox {
+  width: 5px;
+  height: 25px;
+  background-color: rgb(227, 5, 42);
+  margin-right: 20px;
+}
+
+h3 {
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+}
