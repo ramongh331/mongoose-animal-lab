@@ -3,18 +3,24 @@
   <head>
     <%- include("../partials/head.ejs") %>
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/ad.css" />
   </head>
   <body>
-    <%- include("../partials/header.ejs") %>
+    <%- include("../partials/header.ejs") %> <%-
+    include("../partials/advertisement.ejs") %>
     <main>
-      <h2>Animal App</h2>
+      <div class="mainTitle">
+        <h2>Animal App</h2>
+        <div class="h2Underline"></div>
+      </div>
+      <!-- ---------------------------------------- -->
       <div class="animalList">
         <div class="speciesHeader">
           <div class="speciesBox"></div>
           <h3>Species</h3>
         </div>
         <% for (animal of animals){ %>
-        <article>
+        <article class="animalItems">
           <a class="animalLink" href="/animals/<%=animal._id %>">
             <h4>
               <%= animal.species %> - <%=animal.extinct ? "Extinct" : "Alive" %>
@@ -23,6 +29,9 @@
         </article>
         <% } %>
       </div>
+      <!-- ---------------------------------------- -->
+      <article class="animalExtras"></article>
+      <!-- ---------------------------------------- -->
     </main>
   </body>
 </html>
