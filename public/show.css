@@ -1,0 +1,44 @@
+body {
+  background-image: url("https://i.imgur.com/jLrPVPT.jpg");
+}
+
+main {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 54px;
+}
+
+.h2Underline {
+  background-color: rgb(227, 5, 42);
+  width: 60px;
+  height: 5px;
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="submit"] {
+  margin: 0 100px;
+}

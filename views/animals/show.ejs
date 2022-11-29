@@ -2,27 +2,30 @@
 <html lang="en">
   <head>
     <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="/show.css" />
   </head>
 
   <body>
     <%- include("../partials/header.ejs") %>
     <main>
-      <div>
-        <article>
-          <h2>
-            <%= animal.species %> - <%=animal.extinct ? "Extinct" : "Alive" %>
-          </h2>
-          <h3>Animal Origin: <%= animal.location %></h3>
-          <h3>Life Expectancy: <%= animal.lifeExpectancy %></h3>
+      <article>
+        <h2>
+          <%= animal.species %> - <%=animal.extinct ? "Extinct" : "Alive" %>
+        </h2>
+        <div class="h2Underline"></div>
+        <h3>Animal Origin: <%= animal.location %></h3>
+        <h3>Life Expectancy: <%= animal.lifeExpectancy %></h3>
+        <!-- ------------------------------------------------ -->
+        <section class="buttons">
           <a href="/animals/<%= animal._id %>/edit"
             ><button>Edit Animal</button></a
           >
           <form action="/animals/<%=animal._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete" />
+            <input type="submit" value="Delete Animal" />
           </form>
           <a href="/animals"><button>Back to Main</button></a>
-        </article>
-      </div>
+        </section>
+      </article>
     </main>
   </body>
 </html>
