@@ -1,7 +1,7 @@
 header {
   display: flex;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   font-family: "Ubuntu", sans-serif;
 }
 
