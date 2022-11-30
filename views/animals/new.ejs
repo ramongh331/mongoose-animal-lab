@@ -2,16 +2,18 @@
 <html lang="en">
   <head>
     <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="/new.css" />
   </head>
 
   <body>
     <%- include("../partials/header.ejs") %>
     <main>
       <h2>Add a New Animal</h2>
-      <div>
+      <!-- ----------------------- -->
+      <section>
         <form action="/animals" method="POST">
           <fieldset>
-            <label>
+            <label class="species">
               Species: <br /><input
                 type="text"
                 name="species"
@@ -19,12 +21,12 @@
               />
             </label>
             <br />
-            <label>
+            <label class="extinct">
               Extinct (check if extinct):
               <input type="checkbox" name="extinct" />
             </label>
             <br />
-            <label>
+            <label class="location">
               Location Origin: <br /><input
                 type="text"
                 name="location"
@@ -32,7 +34,7 @@
               />
             </label>
             <br />
-            <label>
+            <label class="life">
               Life Expectancy: <br /><input
                 type="text"
                 name="lifeExpectancy"
@@ -42,7 +44,7 @@
           </fieldset>
           <input type="submit" value="Add Animal" />
         </form>
-      </div>
+      </section>
     </main>
   </body>
 </html>

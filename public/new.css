@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+}
+
+main {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+section {
+  width: 70%;
+}
+
+fieldset {
+  border: 5px solid white;
+  display: grid;
+  grid-template-areas:
+    "species location life"
+    "extinct extinct extinct";
+  place-items: center;
+}
+
+label {
+  font-size: 25px;
+}
+
+input {
+  font-size: 20px;
+}
+
+.species {
+  grid-area: species;
+}
+.location {
+  grid-area: location;
+}
+.life {
+  grid-area: life;
+}
+.extinct {
+  grid-area: extinct;
+  margin-top: 15px;
+}
+
+input[type="submit"] {
+  background-color: rgb(227, 5, 42);
+  font-size: 15px;
+  transform: scale(1.3);
+  border: none;
+  padding: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(165, 4, 31);
+}
