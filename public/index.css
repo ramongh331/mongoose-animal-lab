@@ -85,7 +85,6 @@ h4 {
   grid-area: extra;
   width: 600px;
   height: 420px;
-  background-color: aqua;
   margin: 32px auto;
   position: relative;
   overflow: hidden;
@@ -101,4 +100,24 @@ h4 {
 .animalExtras img:hover {
   transform: scale(1.2);
   transition: 400ms;
+}
+
+.articleText {
+  position: absolute;
+  z-index: 3;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 10px;
+  padding: 10px;
+}
+
+.articleText h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.articleText h4 {
+  font-size: 15px;
 }

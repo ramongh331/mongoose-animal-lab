@@ -4,10 +4,13 @@
     <%- include("../partials/head.ejs") %>
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/ad.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
-    <%- include("../partials/header.ejs") %> <%-
-    include("../partials/advertisement.ejs") %>
+    <section class="headerAd">
+      <%- include("../partials/header.ejs") %> <%-
+      include("../partials/advertisement.ejs") %>
+    </section>
     <main>
       <div class="mainTitle">
         <h2>Animal App</h2>
@@ -39,6 +42,14 @@
           src="https://i.imgur.com/PAsjbBG.jpg"
           alt="Cover for the film Who Framed Roger Rabbit."
         />
+        <article class="articleText">
+          <h3>Animals Behind the Scenes</h3>
+          <h4>
+            Roger Rabbit is an amalgamation of various classic cartoon
+            characters, taking: Mickey Mouse for his gloves, his red pants with
+            yellow/white buttons, and his lack of a shirt;...
+          </h4>
+        </article>
       </article>
       <!-- ---------------------------------------- -->
     </main>
