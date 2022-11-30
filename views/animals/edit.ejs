@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="/edit.css" />
   </head>
   <body>
     <%- include("../partials/header.ejs") %>
     <main>
       <h2>Edit <%=animal.species %> Info</h2>
-      <div>
+      <section>
         <form action="/animals/<%=animal._id %>?_method=PUT" method="POST">
           <fieldset>
-            <label>
+            <label class="species">
               Species: <br /><input
                 type="text"
                 name="species"
@@ -19,12 +20,12 @@
               />
             </label>
             <br />
-            <label>
+            <label class="extinct">
               Extinct (check if extinct): <input type="checkbox" name="extinct"
               <%= animal.extinct ? "checked" : "" %> />
             </label>
             <br />
-            <label>
+            <label class="location">
               Location Origin: <br /><input
                 type="text"
                 name="location"
@@ -33,7 +34,7 @@
               />
             </label>
             <br />
-            <label>
+            <label class="life">
               Life Expectancy: <br /><input
                 type="text"
                 name="lifeExpectancy"
@@ -42,9 +43,9 @@
               />
             </label>
           </fieldset>
-          <input type="submit" value="Add Animal" />
+          <input type="submit" value="Update Animal" />
         </form>
-      </div>
+      </section>
     </main>
   </body>
 </html>
